@@ -13,8 +13,13 @@ require_relative '../lib/book'
 #   * Check that it behaves as expected
 # * any other expected behaviors
 
+describe Book do
+  before(:context) do
+    @book = Book.new('Harry Potter', 15.00, 600, 'JK Rowling')
+  end
+
   # check initialization
-describe 'Initialization' do
+  describe 'Initialization' do
     it 'should be a book' do
       expect(@book).to be_instance_of(Book)
     end
@@ -41,7 +46,7 @@ describe 'Initialization' do
   end
 
   # check getters and setters
-describe 'getters and setters' do
+  describe 'getters and setters' do
     it 'assigns and reads the name' do
       @book.name = 'Paradise Lost'
       expect(@book.name).to eq('Paradise Lost')
@@ -61,4 +66,5 @@ describe 'getters and setters' do
       @book.author = 'John Milton'
       expect(@book.author).to eq('John Milton')
     end
+  end
 end
