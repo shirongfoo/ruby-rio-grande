@@ -5,5 +5,5 @@ class DigitalItem < Item
   def initialize(name, price)
   super(name, price)
   @quantity = 1
-end
+  end
 end
