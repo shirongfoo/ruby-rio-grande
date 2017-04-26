@@ -1,14 +1,20 @@
 require_relative 'spec_helper'
 require_relative '../lib/book'
 
-describe Book do
-  before(:context) do
-    # initialize item
-    @book = Book.new('Harry Potter', 15.00, 700, 'JK Rowling')
-  end
+#
+# ###Tests
+# Every class should have tests for all of the following:
+#
+# * Initializer
+# * instance_of / inheritance
+# * getters / setters (for each attribute)
+# * methods
+#   * Check return value
+#   * Check that it behaves as expected
+# * any other expected behaviors
 
   # check initialization
-  describe 'Initialization' do
+describe 'Initialization' do
     it 'should be a book' do
       expect(@book).to be_instance_of(Book)
     end
@@ -35,7 +41,7 @@ describe Book do
   end
 
   # check getters and setters
-  describe 'getters and setters' do
+describe 'getters and setters' do
     it 'assigns and reads the name' do
       @book.name = 'Paradise Lost'
       expect(@book.name).to eq('Paradise Lost')
@@ -55,5 +61,4 @@ describe Book do
       @book.author = 'John Milton'
       expect(@book.author).to eq('John Milton')
     end
-  end
 end
