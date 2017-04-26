@@ -39,6 +39,18 @@ describe Bluray do
       @bluray.price = 10
       expect(@bluray.price).to eq(10)
     end
+    it 'assigns and reads the price' do
+      @bluray.runtime = 15
+      expect(@bluray.runtime).to eq(15)
+    end
+    it 'assigns and reads the price' do
+      @bluray.director= 'Baoling'
+      expect(@bluray.director).to eq('Baoling')
+    end
+    it 'assigns and reads the price' do
+      @bluray.producer = 'Shirong'
+      expect(@bluray.producer).to eq('Shirong')
+    end
   end
   # check initialization
   # check that it is an extended from Item
