@@ -24,14 +24,14 @@ describe Cd do
     end
 
     it 'has tracks' do
-      expect(@cd.pages).to eq(10)
+      expect(@cd.tracks).to eq(10)
     end
 
     it 'is assigned an artist' do
-      expect(@cd.author).to eq('Blue')
+      expect(@cd.artist).to eq('Blue')
     end
     it 'is assigned a run time' do
-      expect(@cd.author).to eq(40)
+      expect(@cd.runtime).to eq(40)
     end
   end
 
@@ -49,7 +49,7 @@ describe Cd do
 
     it 'assigns and reads the tracks' do
       @cd.tracks = 2
-      expect(@cd.pages).to eq(2)
+      expect(@cd.tracks).to eq(2)
     end
 
     it 'assigns and reads the artist' do
@@ -57,7 +57,7 @@ describe Cd do
       expect(@cd.artist).to eq('John')
     end
     it 'assigns and reads the run time' do
-      @cd.runtime = '34'
+      @cd.runtime = 34
       expect(@cd.runtime).to eq(34)
     end
   end

@@ -8,7 +8,7 @@ describe Bluray do
 
   describe 'Initialization' do
     it 'is inherited from Item class' do
-      expect(@bluray).to be < Item
+      expect(@bluray).to be_kind_of(Item)
     end
     it 'is an instance of Bluray' do
       expect(@bluray).to be_instance_of(Bluray)

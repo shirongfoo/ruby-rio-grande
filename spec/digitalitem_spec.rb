@@ -29,7 +29,7 @@ describe DigitalItem do
       expect(@digitalItem.quantity). to eq(1)
     end
   end
-end
+
 
 # check getters and setters
 describe 'getters and setters' do
@@ -40,6 +40,7 @@ describe 'getters and setters' do
 
   it 'assigns and reads the price' do
     @digitalItem.price = 2.99
-    expect(@digitalItem.price).to eq('2.99')
+    expect(@digitalItem.price).to eq(2.99)
   end
+end
 end
