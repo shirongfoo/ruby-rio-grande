@@ -8,6 +8,11 @@ Rio Grande is an online retailer founded by Jerome Basile and named after his fa
   * Run `rubocop` to lint your code
   * Run `rspec` to run the test suite
 
+##Group Member
+
+* Shirong
+* Bao Ling
+
 ##Development Process
 
 We are creating this using Test Driven Development. As a refresher, here is the basic process:
